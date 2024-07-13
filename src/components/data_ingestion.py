@@ -10,10 +10,9 @@ from dataclasses import dataclass
 
 @dataclass
 class DataIngestionConfig:
-    end_to_end_dir = 'C:/Users/user/Desktop/Projects/end-to-end'
-    train_data_path: str=os.path.join(end_to_end_dir,'artifacts',"train.csv")
-    test_data_path: str=os.path.join(end_to_end_dir,'artifacts',"test.csv")
-    raw_data_path: str=os.path.join(end_to_end_dir,'artifacts',"data.csv")
+    train_data_path: str=os.path.join('artifacts',"train.csv")
+    test_data_path: str=os.path.join('artifacts',"test.csv")
+    raw_data_path: str=os.path.join('artifacts',"data.csv")
 
 class DataIngestion:
     def __init__(self):
@@ -22,7 +21,8 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
-            file_path = 'C:/Users/user/Desktop/Projects/end-to-end/notebook/data/stud.csv'
+            
+            file_path = 'notebook\data\stud.csv'
             df = pd.read_csv(file_path)
             logging.info('Read the dataset as dataframe')
 
@@ -37,7 +37,7 @@ class DataIngestion:
 
             test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
 
-            logging.info("Inmgestion of the data iss completed")
+            logging.info("Ingestion of the data is completed")
 
             return(
                 self.ingestion_config.train_data_path,
