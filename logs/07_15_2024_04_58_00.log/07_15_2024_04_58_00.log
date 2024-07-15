@@ -1,0 +1,4 @@
+[ 2024-07-15 04:58:01,091 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-07-15 04:58:01,093 ] 97 werkzeug - INFO -  * Debugger PIN: 874-482-997
+[ 2024-07-15 04:58:12,397 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:58:12] "POST /predictdata HTTP/1.1" 200 -
+[ 2024-07-15 04:58:30,372 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:58:30] "POST /predictdata HTTP/1.1" 200 -

@@ -1,0 +1,123 @@
+[ 2024-07-15 04:51:07,850 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.12:5000
+[ 2024-07-15 04:51:07,850 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-07-15 04:52:27,336 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:52:27] "GET / HTTP/1.1" 200 -
+[ 2024-07-15 04:52:27,727 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:52:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2024-07-15 04:52:36,738 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:52:36] "GET /predictdata HTTP/1.1" 200 -
+[ 2024-07-15 04:53:02,564 ] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\app.py", line 35, in predict_datapoint
+    pred_df=data.get_data_as_data_frame()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomData' object has no attribute 'get_data_as_data_frame'
+[ 2024-07-15 04:53:02,603 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:53:02] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2024-07-15 04:53:16,637 ] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\app.py", line 35, in predict_datapoint
+    pred_df=data.get_data_as_data_frame()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomData' object has no attribute 'get_data_as_data_frame'
+[ 2024-07-15 04:53:16,639 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:53:16] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2024-07-15 04:54:37,405 ] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\app.py", line 35, in predict_datapoint
+    pred_df=data.get_data_as_data_frame()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomData' object has no attribute 'get_data_as_data_frame'
+[ 2024-07-15 04:54:37,409 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:54:37] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2024-07-15 04:54:40,996 ] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\app.py", line 35, in predict_datapoint
+    pred_df=data.get_data_as_data_frame()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomData' object has no attribute 'get_data_as_data_frame'
+[ 2024-07-15 04:54:41,000 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:54:41] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2024-07-15 04:54:44,810 ] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\app.py", line 35, in predict_datapoint
+    pred_df=data.get_data_as_data_frame()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomData' object has no attribute 'get_data_as_data_frame'
+[ 2024-07-15 04:54:44,814 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:54:44] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2024-07-15 04:54:51,669 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:54:51] "GET /predictdata HTTP/1.1" 200 -
+[ 2024-07-15 04:55:08,432 ] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Projects\end-to-end\app.py", line 35, in predict_datapoint
+    pred_df=data.get_data_as_data_frame()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomData' object has no attribute 'get_data_as_data_frame'
+[ 2024-07-15 04:55:08,435 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/Jul/2024 04:55:08] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
